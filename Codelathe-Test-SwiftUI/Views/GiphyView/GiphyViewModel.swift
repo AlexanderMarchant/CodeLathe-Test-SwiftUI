@@ -28,6 +28,7 @@ public class GiphyViewModel: ObservableObject {
     
     func getGifs(by searchType: GiphySearch, searchTerm: String? = nil) {
         
+        self.gifs = [Gif]()
         self.giphyService.resetTrendingSearch()
         self.giphyService.resetSearchByTermSearch()
         
@@ -52,7 +53,7 @@ public class GiphyViewModel: ObservableObject {
         }
     }
     
-    internal func getGifsBySearchTerm(userSearch: String?) {
+    private func getGifsBySearchTerm(userSearch: String?) {
         
         guard var search = userSearch else {
             return
@@ -92,7 +93,7 @@ public class GiphyViewModel: ObservableObject {
         
     }
     
-    func getTrendingGifs() {
+    private func getTrendingGifs() {
         
         self.currentSearch = .trending
         
