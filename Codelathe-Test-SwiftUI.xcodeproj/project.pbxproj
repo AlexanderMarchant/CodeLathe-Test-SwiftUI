@@ -13,6 +13,8 @@
 		D491A63E25BF543F00A0779F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D491A63D25BF543F00A0779F /* Preview Assets.xcassets */; };
 		D491A64925BF543F00A0779F /* Codelathe_Test_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A64825BF543F00A0779F /* Codelathe_Test_SwiftUITests.swift */; };
 		D491A65425BF543F00A0779F /* Codelathe_Test_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A65325BF543F00A0779F /* Codelathe_Test_SwiftUIUITests.swift */; };
+		D491A66A25BF55F400A0779F /* AppColours.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D491A66925BF55F400A0779F /* AppColours.xcassets */; };
+		D491A67125BF562F00A0779F /* AppColours.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A67025BF562F00A0779F /* AppColours.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		D491A64F25BF543F00A0779F /* Codelathe-Test-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Codelathe-Test-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D491A65325BF543F00A0779F /* Codelathe_Test_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codelathe_Test_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		D491A65525BF543F00A0779F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D491A66925BF55F400A0779F /* AppColours.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppColours.xcassets; sourceTree = "<group>"; };
+		D491A67025BF562F00A0779F /* AppColours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColours.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,9 +99,10 @@
 		D491A63525BF543C00A0779F /* Codelathe-Test-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				D491A66E25BF561600A0779F /* Extensions */,
+				D491A66725BF55D200A0779F /* Content */,
 				D491A63625BF543C00A0779F /* Codelathe_Test_SwiftUIApp.swift */,
 				D491A63825BF543C00A0779F /* ContentView.swift */,
-				D491A63A25BF543F00A0779F /* Assets.xcassets */,
 				D491A63F25BF543F00A0779F /* Info.plist */,
 				D491A63C25BF543F00A0779F /* Preview Content */,
 			);
@@ -128,6 +133,47 @@
 				D491A65525BF543F00A0779F /* Info.plist */,
 			);
 			path = "Codelathe-Test-SwiftUIUITests";
+			sourceTree = "<group>";
+		};
+		D491A66725BF55D200A0779F /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				D491A67525BF567100A0779F /* Images */,
+				D491A66825BF55DF00A0779F /* Colours */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		D491A66825BF55DF00A0779F /* Colours */ = {
+			isa = PBXGroup;
+			children = (
+				D491A66925BF55F400A0779F /* AppColours.xcassets */,
+			);
+			path = Colours;
+			sourceTree = "<group>";
+		};
+		D491A66E25BF561600A0779F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D491A66F25BF562300A0779F /* Color */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D491A66F25BF562300A0779F /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				D491A67025BF562F00A0779F /* AppColours.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		D491A67525BF567100A0779F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D491A63A25BF543F00A0779F /* Assets.xcassets */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D491A66A25BF55F400A0779F /* AppColours.xcassets in Resources */,
 				D491A63E25BF543F00A0779F /* Preview Assets.xcassets in Resources */,
 				D491A63B25BF543F00A0779F /* Assets.xcassets in Resources */,
 			);
@@ -261,6 +308,7 @@
 			files = (
 				D491A63925BF543C00A0779F /* ContentView.swift in Sources */,
 				D491A63725BF543C00A0779F /* Codelathe_Test_SwiftUIApp.swift in Sources */,
+				D491A67125BF562F00A0779F /* AppColours.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
