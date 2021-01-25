@@ -15,6 +15,19 @@
 		D491A65425BF543F00A0779F /* Codelathe_Test_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A65325BF543F00A0779F /* Codelathe_Test_SwiftUIUITests.swift */; };
 		D491A66A25BF55F400A0779F /* AppColours.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D491A66925BF55F400A0779F /* AppColours.xcassets */; };
 		D491A67125BF562F00A0779F /* AppColours.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A67025BF562F00A0779F /* AppColours.swift */; };
+		D491A67825BF575E00A0779F /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A67725BF575E00A0779F /* Fonts.swift */; };
+		D491A68A25BF57AD00A0779F /* Inter-VariableFont_slnt,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D491A67D25BF57AD00A0779F /* Inter-VariableFont_slnt,wght.ttf */; };
+		D491A68B25BF57AD00A0779F /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D491A67F25BF57AD00A0779F /* Inter-Medium.ttf */; };
+		D491A68C25BF57AD00A0779F /* Inter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D491A68025BF57AD00A0779F /* Inter-Light.ttf */; };
+		D491A68D25BF57AD00A0779F /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D491A68125BF57AD00A0779F /* Inter-Thin.ttf */; };
+		D491A68E25BF57AD00A0779F /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D491A68225BF57AD00A0779F /* Inter-Bold.ttf */; };
+		D491A68F25BF57AD00A0779F /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D491A68325BF57AD00A0779F /* Inter-Regular.ttf */; };
+		D491A69025BF57AD00A0779F /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D491A68425BF57AD00A0779F /* Inter-ExtraBold.ttf */; };
+		D491A69125BF57AD00A0779F /* Inter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D491A68525BF57AD00A0779F /* Inter-ExtraLight.ttf */; };
+		D491A69225BF57AD00A0779F /* Inter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D491A68625BF57AD00A0779F /* Inter-Black.ttf */; };
+		D491A69325BF57AD00A0779F /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D491A68725BF57AD00A0779F /* Inter-SemiBold.ttf */; };
+		D491A69425BF57AD00A0779F /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = D491A68825BF57AD00A0779F /* OFL.txt */; };
+		D491A69525BF57AD00A0779F /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = D491A68925BF57AD00A0779F /* README.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +62,19 @@
 		D491A65525BF543F00A0779F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D491A66925BF55F400A0779F /* AppColours.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppColours.xcassets; sourceTree = "<group>"; };
 		D491A67025BF562F00A0779F /* AppColours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColours.swift; sourceTree = "<group>"; };
+		D491A67725BF575E00A0779F /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		D491A67D25BF57AD00A0779F /* Inter-VariableFont_slnt,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-VariableFont_slnt,wght.ttf"; sourceTree = "<group>"; };
+		D491A67F25BF57AD00A0779F /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		D491A68025BF57AD00A0779F /* Inter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Light.ttf"; sourceTree = "<group>"; };
+		D491A68125BF57AD00A0779F /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
+		D491A68225BF57AD00A0779F /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		D491A68325BF57AD00A0779F /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		D491A68425BF57AD00A0779F /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
+		D491A68525BF57AD00A0779F /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
+		D491A68625BF57AD00A0779F /* Inter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Black.ttf"; sourceTree = "<group>"; };
+		D491A68725BF57AD00A0779F /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		D491A68825BF57AD00A0779F /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		D491A68925BF57AD00A0779F /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +164,7 @@
 		D491A66725BF55D200A0779F /* Content */ = {
 			isa = PBXGroup;
 			children = (
+				D491A67625BF572300A0779F /* Fonts */,
 				D491A67525BF567100A0779F /* Images */,
 				D491A66825BF55DF00A0779F /* Colours */,
 			);
@@ -174,6 +201,42 @@
 				D491A63A25BF543F00A0779F /* Assets.xcassets */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		D491A67625BF572300A0779F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D491A67725BF575E00A0779F /* Fonts.swift */,
+				D491A67C25BF57AD00A0779F /* Inter */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		D491A67C25BF57AD00A0779F /* Inter */ = {
+			isa = PBXGroup;
+			children = (
+				D491A67D25BF57AD00A0779F /* Inter-VariableFont_slnt,wght.ttf */,
+				D491A67E25BF57AD00A0779F /* static */,
+				D491A68825BF57AD00A0779F /* OFL.txt */,
+				D491A68925BF57AD00A0779F /* README.txt */,
+			);
+			path = Inter;
+			sourceTree = "<group>";
+		};
+		D491A67E25BF57AD00A0779F /* static */ = {
+			isa = PBXGroup;
+			children = (
+				D491A67F25BF57AD00A0779F /* Inter-Medium.ttf */,
+				D491A68025BF57AD00A0779F /* Inter-Light.ttf */,
+				D491A68125BF57AD00A0779F /* Inter-Thin.ttf */,
+				D491A68225BF57AD00A0779F /* Inter-Bold.ttf */,
+				D491A68325BF57AD00A0779F /* Inter-Regular.ttf */,
+				D491A68425BF57AD00A0779F /* Inter-ExtraBold.ttf */,
+				D491A68525BF57AD00A0779F /* Inter-ExtraLight.ttf */,
+				D491A68625BF57AD00A0779F /* Inter-Black.ttf */,
+				D491A68725BF57AD00A0779F /* Inter-SemiBold.ttf */,
+			);
+			path = static;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,9 +342,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D491A69425BF57AD00A0779F /* OFL.txt in Resources */,
+				D491A68A25BF57AD00A0779F /* Inter-VariableFont_slnt,wght.ttf in Resources */,
+				D491A68F25BF57AD00A0779F /* Inter-Regular.ttf in Resources */,
 				D491A66A25BF55F400A0779F /* AppColours.xcassets in Resources */,
+				D491A69525BF57AD00A0779F /* README.txt in Resources */,
+				D491A68E25BF57AD00A0779F /* Inter-Bold.ttf in Resources */,
+				D491A69325BF57AD00A0779F /* Inter-SemiBold.ttf in Resources */,
 				D491A63E25BF543F00A0779F /* Preview Assets.xcassets in Resources */,
+				D491A69025BF57AD00A0779F /* Inter-ExtraBold.ttf in Resources */,
+				D491A68B25BF57AD00A0779F /* Inter-Medium.ttf in Resources */,
+				D491A69225BF57AD00A0779F /* Inter-Black.ttf in Resources */,
+				D491A68C25BF57AD00A0779F /* Inter-Light.ttf in Resources */,
+				D491A69125BF57AD00A0779F /* Inter-ExtraLight.ttf in Resources */,
 				D491A63B25BF543F00A0779F /* Assets.xcassets in Resources */,
+				D491A68D25BF57AD00A0779F /* Inter-Thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +381,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D491A67825BF575E00A0779F /* Fonts.swift in Sources */,
 				D491A63925BF543C00A0779F /* ContentView.swift in Sources */,
 				D491A63725BF543C00A0779F /* Codelathe_Test_SwiftUIApp.swift in Sources */,
 				D491A67125BF562F00A0779F /* AppColours.swift in Sources */,
