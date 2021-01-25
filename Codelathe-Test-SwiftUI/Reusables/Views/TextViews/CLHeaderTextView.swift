@@ -1,5 +1,5 @@
 //
-//  CLTitleView.swift
+//  CLHeaderView.swift
 //  Codelathe-Test-SwiftUI
 //
 //  Created by Alex Marchant on 25/01/2021.
@@ -7,19 +7,19 @@
 
 import SwiftUI
 
-struct CLTitleView: View {
+struct CLHeaderTextView: View {
     
     var text: String
     
     var body: some View {
         Text(text)
-            .font(Fonts.titleFont)
+            .font(Fonts.headerFont)
             .foregroundColor(Color.body)
     }
 }
 
-struct CLTitleView_Previews: PreviewProvider {
+struct CLHeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        CLTitleView(text: "Testing")
+        CLHeaderTextView(text: "Testing")
     }
 }

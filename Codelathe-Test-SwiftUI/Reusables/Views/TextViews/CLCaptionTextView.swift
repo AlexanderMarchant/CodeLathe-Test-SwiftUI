@@ -1,5 +1,5 @@
 //
-//  CLBodyView.swift
+//  CLCaptionView.swift
 //  Codelathe-Test-SwiftUI
 //
 //  Created by Alex Marchant on 25/01/2021.
@@ -7,19 +7,19 @@
 
 import SwiftUI
 
-struct CLBodyView: View {
+struct CLCaptionTextView: View {
     
     var text: String
     
     var body: some View {
         Text(text)
-            .font(Fonts.bodyFont)
+            .font(Fonts.captionFont)
             .foregroundColor(Color.body)
     }
 }
 
-struct CLBodyView_Previews: PreviewProvider {
+struct CLCaptionView_Previews: PreviewProvider {
     static var previews: some View {
-        CLBodyView(text: "Testing")
+        CLCaptionTextView(text: "Testing")
     }
 }

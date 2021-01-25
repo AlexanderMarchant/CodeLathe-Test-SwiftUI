@@ -1,5 +1,5 @@
 //
-//  CLSubTitleView.swift
+//  CLBodyView.swift
 //  Codelathe-Test-SwiftUI
 //
 //  Created by Alex Marchant on 25/01/2021.
@@ -7,19 +7,19 @@
 
 import SwiftUI
 
-struct CLSubTitleView: View {
+struct CLBodyTextView: View {
     
     var text: String
     
     var body: some View {
         Text(text)
-            .font(Fonts.subTitleFont)
+            .font(Fonts.bodyFont)
             .foregroundColor(Color.body)
     }
 }
 
-struct CLSubTitleView_Previews: PreviewProvider {
+struct CLBodyView_Previews: PreviewProvider {
     static var previews: some View {
-        CLSubTitleView(text: "Testing")
+        CLBodyTextView(text: "Testing")
     }
 }

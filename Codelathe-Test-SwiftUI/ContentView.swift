@@ -12,12 +12,12 @@ struct ContentView: View {
         
         Form {
             Section {
-                CLTitleView(text: "Title")
-                CLSubTitleView(text: "Sub-Title")
-                CLHeaderView(text: "Header")
-                CLSubHeaderView(text: "Sub-Header")
-                CLBodyView(text: "Body")
-                CLCaptionView(text: "Caption")
+                CLTitleTextView(text: "Title")
+                CLSubTitleTextView(text: "Sub-Title")
+                CLHeaderTextView(text: "Header")
+                CLSubHeaderTextView(text: "Sub-Header")
+                CLBodyTextView(text: "Body")
+                CLCaptionTextView(text: "Caption")
             }
             Section {
                 CLPrimaryButton(
