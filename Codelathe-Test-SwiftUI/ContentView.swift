@@ -8,8 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        GiphyView(giphyViewModel: GiphyViewModel(GiphyService(), UrlSessionService()))
+        NavigationView {
+            GiphyView(giphyViewModel: GiphyViewModel(GiphyService(), UrlSessionService()))
+                
+                .navigationBarTitle("Gift Of Gifs")
+                .navigationBarTitleDisplayMode(.inline)
+                .navigationBarItems(
+                    leading:
+                        Button(action: {
+                            print("Trending")
+                        }) {
+                            Text("Trending")
+                                .font(Fonts.buttonFont)
+                                .foregroundColor(Color.body)
+                        },
+                    trailing:Button(action: {
+                        print("Show CV view")
+                    }) {
+                        Text("CV")
+                            .font(Fonts.buttonFont)
+                            .foregroundColor(Color.body)
+                    }
+                        
+                )
+        }
     }
 }
 

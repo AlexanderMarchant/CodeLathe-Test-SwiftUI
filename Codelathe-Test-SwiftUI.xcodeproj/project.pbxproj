@@ -50,6 +50,7 @@
 		D491A72B25BF6B9800A0779F /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A72925BF6B9800A0779F /* Result.swift */; };
 		D491A72C25BF6B9800A0779F /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A72A25BF6B9800A0779F /* APIResponse.swift */; };
 		D491A73225BF6BAD00A0779F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A73125BF6BAD00A0779F /* Constants.swift */; };
+		D491A73A25BF8D8400A0779F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A73925BF8D8300A0779F /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +120,7 @@
 		D491A72925BF6B9800A0779F /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		D491A72A25BF6B9800A0779F /* APIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		D491A73125BF6BAD00A0779F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D491A73925BF8D8300A0779F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 				D491A63825BF543C00A0779F /* ContentView.swift */,
 				D491A63F25BF543F00A0779F /* Info.plist */,
 				D491A63C25BF543F00A0779F /* Preview Content */,
+				D491A73925BF8D8300A0779F /* AppDelegate.swift */,
 			);
 			path = "Codelathe-Test-SwiftUI";
 			sourceTree = "<group>";
@@ -596,6 +599,7 @@
 				D491A63725BF543C00A0779F /* Codelathe_Test_SwiftUIApp.swift in Sources */,
 				D491A6E725BF631900A0779F /* GiphyRowView.swift in Sources */,
 				D491A6FF25BF652F00A0779F /* UrlSessionService.swift in Sources */,
+				D491A73A25BF8D8400A0779F /* AppDelegate.swift in Sources */,
 				D491A6C225BF611A00A0779F /* CLBodyTextView.swift in Sources */,
 				D491A6C725BF613500A0779F /* CLCaptionTextView.swift in Sources */,
 				D491A67125BF562F00A0779F /* AppColours.swift in Sources */,
