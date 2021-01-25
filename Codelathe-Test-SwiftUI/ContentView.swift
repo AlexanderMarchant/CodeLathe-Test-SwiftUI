@@ -9,8 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        
-        GiphyView(giphyViewModel: GiphyViewModel(GiphyService()))
+        GiphyView(giphyViewModel: GiphyViewModel(GiphyService(), UrlSessionService()))
     }
 }
 

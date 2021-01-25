@@ -12,28 +12,40 @@ struct GiphyRowView: View {
     @ObservedObject var giphyRowViewModel: GiphyRowViewModel
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 15) {
+        VStack(alignment: .leading, spacing: 25) {
             HStack(alignment: .center, spacing: 15) {
                 
                 Image(uiImage: (giphyRowViewModel.gifData.isEmpty) ? UIImage(imageLiteralResourceName: "image-not-found") : UIImage(data: giphyRowViewModel.gifData)!)
                     .resizable()
                     .renderingMode(.original)
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 150, height: 100)
+                    .aspectRatio(contentMode: .fit)
+                    .frame(minWidth: 0, maxWidth: .infinity)
                     .cornerRadius(10)
                     .shadow(radius: 10)
-                
-                CLSubTitleTextView(text: giphyRowViewModel.gif.title)
-                    .padding(.leading, 15)
-                Spacer()
+                    .padding(.top)
             }
             
             HStack(spacing: 15) {
-                CLSubHeaderTextView(text: "Posted By:")
-                CLBodyTextView(text: giphyRowViewModel.gif.username)
+                
+                // Use the users display picture for this
+                Image(uiImage: (giphyRowViewModel.gifData.isEmpty) ? UIImage(imageLiteralResourceName: "image-not-found") : UIImage(data: giphyRowViewModel.gifData)!)
+                    .resizable()
+                    .renderingMode(.original)
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 50, height: 50)
+                    .cornerRadius(25)
+                
+                VStack(alignment: .leading, spacing: 8) {
+                    
+                    CLHeaderTextView(text: giphyRowViewModel.gif.title)
+                    HStack {
+                        CLSubHeaderTextView(text: "Posted By:")
+                        CLBodyTextView(text: giphyRowViewModel.gif.username)
+                    }
+                }
             }
             HStack(spacing: 15) {
-                CLSubHeaderTextView(text: "Tending On:")
+                CLSubHeaderTextView(text: "Trending On:")
                 CLBodyTextView(text: giphyRowViewModel.gif.markedTrending)
             }
             HStack(spacing: 15) {
@@ -50,7 +62,7 @@ struct GiphyRowView_Previews: PreviewProvider {
         GiphyRowView(giphyRowViewModel: GiphyRowViewModel(
                         gif: Gif(
                             gifUrl: nil,
-                            title: "Test Title",
+                            title: "Testing a long title to see what happens so that i can make changes as needed",
                             sourceUrl: "Test Source URL",
                             markedTrending: "Test Trending",
                             username: "Test Username"),

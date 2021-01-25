@@ -10,6 +10,7 @@ import SwiftUI
 
 public class GiphyViewModel: ObservableObject {
     
+    let urlSessionService: UrlSessionServiceProtocol
     let giphyService: GiphyServiceProtocol
     
     @Published var gifs = [Gif]()
@@ -17,8 +18,10 @@ public class GiphyViewModel: ObservableObject {
     private (set) var currentSearch: GiphySearch?
     private (set) var currentSearchTerm: String?
     
-    init(_ giphyService: GiphyServiceProtocol) {
+    init(_ giphyService: GiphyServiceProtocol, _ urlSessionService: UrlSessionServiceProtocol) {
+    
         self.giphyService = giphyService
+        self.urlSessionService = urlSessionService
         
         getGifs(by: .trending, searchTerm: nil)
     }
