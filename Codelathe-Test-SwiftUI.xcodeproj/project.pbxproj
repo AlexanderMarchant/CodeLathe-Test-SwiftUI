@@ -36,6 +36,12 @@
 		D491A6BD25BF60F600A0779F /* CLSubHeaderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A6BC25BF60F600A0779F /* CLSubHeaderTextView.swift */; };
 		D491A6C225BF611A00A0779F /* CLBodyTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A6C125BF611A00A0779F /* CLBodyTextView.swift */; };
 		D491A6C725BF613500A0779F /* CLCaptionTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A6C625BF613500A0779F /* CLCaptionTextView.swift */; };
+		D491A6DD25BF62DE00A0779F /* GiphyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A6DC25BF62DE00A0779F /* GiphyView.swift */; };
+		D491A6E225BF62E500A0779F /* GiphyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A6E125BF62E500A0779F /* GiphyViewModel.swift */; };
+		D491A6E725BF631900A0779F /* GiphyRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A6E625BF631900A0779F /* GiphyRowView.swift */; };
+		D491A6EC25BF635200A0779F /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A6EB25BF635200A0779F /* Gif.swift */; };
+		D491A6F225BF64D300A0779F /* GiphyRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A6F125BF64D300A0779F /* GiphyRowViewModel.swift */; };
+		D491A6FF25BF652F00A0779F /* UrlSessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A6FD25BF652F00A0779F /* UrlSessionService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +97,12 @@
 		D491A6BC25BF60F600A0779F /* CLSubHeaderTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLSubHeaderTextView.swift; sourceTree = "<group>"; };
 		D491A6C125BF611A00A0779F /* CLBodyTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLBodyTextView.swift; sourceTree = "<group>"; };
 		D491A6C625BF613500A0779F /* CLCaptionTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLCaptionTextView.swift; sourceTree = "<group>"; };
+		D491A6DC25BF62DE00A0779F /* GiphyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyView.swift; sourceTree = "<group>"; };
+		D491A6E125BF62E500A0779F /* GiphyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyViewModel.swift; sourceTree = "<group>"; };
+		D491A6E625BF631900A0779F /* GiphyRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyRowView.swift; sourceTree = "<group>"; };
+		D491A6EB25BF635200A0779F /* Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gif.swift; sourceTree = "<group>"; };
+		D491A6F125BF64D300A0779F /* GiphyRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphyRowViewModel.swift; sourceTree = "<group>"; };
+		D491A6FD25BF652F00A0779F /* UrlSessionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlSessionService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +153,8 @@
 		D491A63525BF543C00A0779F /* Codelathe-Test-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				D491A6DA25BF62C900A0779F /* Views */,
+				D491A6D725BF629B00A0779F /* Services */,
 				D491A69C25BF5A2800A0779F /* Reusables */,
 				D491A66E25BF561600A0779F /* Extensions */,
 				D491A66725BF55D200A0779F /* Content */,
@@ -295,6 +309,66 @@
 			path = TextViews;
 			sourceTree = "<group>";
 		};
+		D491A6D725BF629B00A0779F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D491A6FC25BF651D00A0779F /* UrlSessionService */,
+				D491A6D925BF62BB00A0779F /* API */,
+				D491A6D825BF62A900A0779F /* GiphyService */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D491A6D825BF62A900A0779F /* GiphyService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GiphyService;
+			sourceTree = "<group>";
+		};
+		D491A6D925BF62BB00A0779F /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		D491A6DA25BF62C900A0779F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D491A6DB25BF62CF00A0779F /* GiphyView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D491A6DB25BF62CF00A0779F /* GiphyView */ = {
+			isa = PBXGroup;
+			children = (
+				D491A6F025BF64C500A0779F /* GiphyRow */,
+				D491A6DC25BF62DE00A0779F /* GiphyView.swift */,
+				D491A6E125BF62E500A0779F /* GiphyViewModel.swift */,
+			);
+			path = GiphyView;
+			sourceTree = "<group>";
+		};
+		D491A6F025BF64C500A0779F /* GiphyRow */ = {
+			isa = PBXGroup;
+			children = (
+				D491A6EB25BF635200A0779F /* Gif.swift */,
+				D491A6F125BF64D300A0779F /* GiphyRowViewModel.swift */,
+				D491A6E625BF631900A0779F /* GiphyRowView.swift */,
+			);
+			path = GiphyRow;
+			sourceTree = "<group>";
+		};
+		D491A6FC25BF651D00A0779F /* UrlSessionService */ = {
+			isa = PBXGroup;
+			children = (
+				D491A6FD25BF652F00A0779F /* UrlSessionService.swift */,
+			);
+			path = UrlSessionService;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -439,13 +513,19 @@
 			files = (
 				D491A67825BF575E00A0779F /* Fonts.swift in Sources */,
 				D491A6AB25BF606300A0779F /* CLTitleTextView.swift in Sources */,
+				D491A6E225BF62E500A0779F /* GiphyViewModel.swift in Sources */,
 				D491A63925BF543C00A0779F /* ContentView.swift in Sources */,
+				D491A6F225BF64D300A0779F /* GiphyRowViewModel.swift in Sources */,
 				D491A6A025BF5A5C00A0779F /* CLPrimaryButton.swift in Sources */,
 				D491A6B825BF60D800A0779F /* CLHeaderTextView.swift in Sources */,
 				D491A6A525BF5B1100A0779F /* CLSecondaryButton.swift in Sources */,
+				D491A6DD25BF62DE00A0779F /* GiphyView.swift in Sources */,
 				D491A6B325BF60B200A0779F /* CLSubTitleTextView.swift in Sources */,
 				D491A6BD25BF60F600A0779F /* CLSubHeaderTextView.swift in Sources */,
+				D491A6EC25BF635200A0779F /* Gif.swift in Sources */,
 				D491A63725BF543C00A0779F /* Codelathe_Test_SwiftUIApp.swift in Sources */,
+				D491A6E725BF631900A0779F /* GiphyRowView.swift in Sources */,
+				D491A6FF25BF652F00A0779F /* UrlSessionService.swift in Sources */,
 				D491A6C225BF611A00A0779F /* CLBodyTextView.swift in Sources */,
 				D491A6C725BF613500A0779F /* CLCaptionTextView.swift in Sources */,
 				D491A67125BF562F00A0779F /* AppColours.swift in Sources */,
