@@ -28,6 +28,8 @@
 		D491A69325BF57AD00A0779F /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D491A68725BF57AD00A0779F /* Inter-SemiBold.ttf */; };
 		D491A69425BF57AD00A0779F /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = D491A68825BF57AD00A0779F /* OFL.txt */; };
 		D491A69525BF57AD00A0779F /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = D491A68925BF57AD00A0779F /* README.txt */; };
+		D491A6A025BF5A5C00A0779F /* CLPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A69F25BF5A5C00A0779F /* CLPrimaryButton.swift */; };
+		D491A6A525BF5B1100A0779F /* CLSecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A6A425BF5B1100A0779F /* CLSecondaryButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		D491A68725BF57AD00A0779F /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		D491A68825BF57AD00A0779F /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		D491A68925BF57AD00A0779F /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		D491A69F25BF5A5C00A0779F /* CLPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLPrimaryButton.swift; sourceTree = "<group>"; };
+		D491A6A425BF5B1100A0779F /* CLSecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLSecondaryButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,7 @@
 		D491A63525BF543C00A0779F /* Codelathe-Test-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				D491A69C25BF5A2800A0779F /* Reusables */,
 				D491A66E25BF561600A0779F /* Extensions */,
 				D491A66725BF55D200A0779F /* Content */,
 				D491A63625BF543C00A0779F /* Codelathe_Test_SwiftUIApp.swift */,
@@ -237,6 +242,31 @@
 				D491A68725BF57AD00A0779F /* Inter-SemiBold.ttf */,
 			);
 			path = static;
+			sourceTree = "<group>";
+		};
+		D491A69C25BF5A2800A0779F /* Reusables */ = {
+			isa = PBXGroup;
+			children = (
+				D491A69D25BF5A4600A0779F /* Views */,
+			);
+			path = Reusables;
+			sourceTree = "<group>";
+		};
+		D491A69D25BF5A4600A0779F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D491A69E25BF5A4E00A0779F /* Buttons */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D491A69E25BF5A4E00A0779F /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				D491A69F25BF5A5C00A0779F /* CLPrimaryButton.swift */,
+				D491A6A425BF5B1100A0779F /* CLSecondaryButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,6 +413,8 @@
 			files = (
 				D491A67825BF575E00A0779F /* Fonts.swift in Sources */,
 				D491A63925BF543C00A0779F /* ContentView.swift in Sources */,
+				D491A6A025BF5A5C00A0779F /* CLPrimaryButton.swift in Sources */,
+				D491A6A525BF5B1100A0779F /* CLSecondaryButton.swift in Sources */,
 				D491A63725BF543C00A0779F /* Codelathe_Test_SwiftUIApp.swift in Sources */,
 				D491A67125BF562F00A0779F /* AppColours.swift in Sources */,
 			);
