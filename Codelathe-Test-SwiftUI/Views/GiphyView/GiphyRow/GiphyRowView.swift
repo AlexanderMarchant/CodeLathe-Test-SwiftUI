@@ -18,8 +18,8 @@ struct GiphyRowView: View {
                 Image(uiImage: (giphyRowViewModel.gifData.isEmpty) ? UIImage(imageLiteralResourceName: "image-not-found") : UIImage(data: giphyRowViewModel.gifData)!)
                     .resizable()
                     .renderingMode(.original)
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 100, height: 100)
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 150, height: 100)
                     .cornerRadius(10)
                     .shadow(radius: 10)
                 

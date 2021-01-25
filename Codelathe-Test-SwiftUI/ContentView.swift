@@ -10,25 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        Form {
-            Section {
-                CLTitleTextView(text: "Title")
-                CLSubTitleTextView(text: "Sub-Title")
-                CLHeaderTextView(text: "Header")
-                CLSubHeaderTextView(text: "Sub-Header")
-                CLBodyTextView(text: "Body")
-                CLCaptionTextView(text: "Caption")
-            }
-            Section {
-                CLPrimaryButton(
-                    buttonTitle: "Primary",
-                    action: { print("Primary button pressed") })
-                
-                CLSecondaryButton(
-                    buttonTitle: "Secondary",
-                    action: { print("Secondary button pressed") })
-            }
-        }
+        GiphyView(giphyViewModel: GiphyViewModel(GiphyService()))
     }
 }
 

@@ -10,7 +10,7 @@ import Foundation
 
 struct Gif {
     
-    var gifUrl: URL?
+    var gifUrl: String?
     var title: String
     var sourceUrl: String?
     var markedTrending: String

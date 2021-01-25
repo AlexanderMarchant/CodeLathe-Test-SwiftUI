@@ -32,7 +32,7 @@ public class GiphyRowViewModel: ObservableObject {
             return
         }
         
-        urlSessionService.downloadImage(from: url) { (data, response, error) in
+        urlSessionService.downloadImage(from: URL(string: url)!) { (data, response, error) in
             guard let data = data else { return }
             
             DispatchQueue.main.async {
