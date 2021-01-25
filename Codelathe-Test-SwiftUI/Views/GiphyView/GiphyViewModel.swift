@@ -5,16 +5,16 @@
 //  Created by Alex Marchant on 25/01/2021.
 //
 
+import Foundation
 import SwiftUI
 
-struct GiphyViewModel: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct GiphyViewModel_Previews: PreviewProvider {
-    static var previews: some View {
-        GiphyViewModel()
+public class GiphyViewModel: ObservableObject {
+    
+    let giphyService: GiphyServiceProtocol
+    
+    @Published var gifs = [Gif]()
+    
+    init(_ giphyService: GiphyServiceProtocol) {
+        self.giphyService = giphyService
     }
 }

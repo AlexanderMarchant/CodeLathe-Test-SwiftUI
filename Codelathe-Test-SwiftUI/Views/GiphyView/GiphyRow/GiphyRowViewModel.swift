@@ -7,8 +7,6 @@
 
 import Foundation
 import SwiftUI
-import Combine
-
 
 public class GiphyRowViewModel: ObservableObject {
     
