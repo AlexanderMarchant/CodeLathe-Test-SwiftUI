@@ -11,27 +11,23 @@ struct ContentView: View {
     var body: some View {
         
         Form {
-            Text("Title Font")
-                .font(Fonts.titleFont)
-                .padding()
-            Text("SubTitle Font")
-                .font(Fonts.subTitleFont)
-                .padding()
-            Text("Header Font")
-                .font(Fonts.headerFont)
-                .padding()
-            Text("Sub-Header Font")
-                .font(Fonts.subHeaderFont)
-                .padding()
-            Text("Body Font")
-                .font(Fonts.bodyFont)
-                .padding()
-            Text("Button Font")
-                .font(Fonts.buttonFont)
-                .padding()
-            Text("Caption Font")
-                .font(Fonts.captionFont)
-                .padding()
+            Section {
+                CLTitleView(text: "Title")
+                CLSubTitleView(text: "Sub-Title")
+                CLHeaderView(text: "Header")
+                CLSubHeaderView(text: "Sub-Header")
+                CLBodyView(text: "Body")
+                CLCaptionView(text: "Caption")
+            }
+            Section {
+                CLPrimaryButton(
+                    buttonTitle: "Primary",
+                    action: { print("Primary button pressed") })
+                
+                CLSecondaryButton(
+                    buttonTitle: "Secondary",
+                    action: { print("Secondary button pressed") })
+            }
         }
     }
 }

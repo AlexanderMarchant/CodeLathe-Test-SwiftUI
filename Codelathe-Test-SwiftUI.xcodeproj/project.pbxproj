@@ -30,6 +30,12 @@
 		D491A69525BF57AD00A0779F /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = D491A68925BF57AD00A0779F /* README.txt */; };
 		D491A6A025BF5A5C00A0779F /* CLPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A69F25BF5A5C00A0779F /* CLPrimaryButton.swift */; };
 		D491A6A525BF5B1100A0779F /* CLSecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A6A425BF5B1100A0779F /* CLSecondaryButton.swift */; };
+		D491A6AB25BF606300A0779F /* CLTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A6AA25BF606300A0779F /* CLTitleView.swift */; };
+		D491A6B325BF60B200A0779F /* CLSubTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A6B225BF60B200A0779F /* CLSubTitleView.swift */; };
+		D491A6B825BF60D800A0779F /* CLHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A6B725BF60D800A0779F /* CLHeaderView.swift */; };
+		D491A6BD25BF60F600A0779F /* CLSubHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A6BC25BF60F600A0779F /* CLSubHeaderView.swift */; };
+		D491A6C225BF611A00A0779F /* CLBodyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A6C125BF611A00A0779F /* CLBodyView.swift */; };
+		D491A6C725BF613500A0779F /* CLCaptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A6C625BF613500A0779F /* CLCaptionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +85,12 @@
 		D491A68925BF57AD00A0779F /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		D491A69F25BF5A5C00A0779F /* CLPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLPrimaryButton.swift; sourceTree = "<group>"; };
 		D491A6A425BF5B1100A0779F /* CLSecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLSecondaryButton.swift; sourceTree = "<group>"; };
+		D491A6AA25BF606300A0779F /* CLTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLTitleView.swift; sourceTree = "<group>"; };
+		D491A6B225BF60B200A0779F /* CLSubTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLSubTitleView.swift; sourceTree = "<group>"; };
+		D491A6B725BF60D800A0779F /* CLHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLHeaderView.swift; sourceTree = "<group>"; };
+		D491A6BC25BF60F600A0779F /* CLSubHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLSubHeaderView.swift; sourceTree = "<group>"; };
+		D491A6C125BF611A00A0779F /* CLBodyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLBodyView.swift; sourceTree = "<group>"; };
+		D491A6C625BF613500A0779F /* CLCaptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLCaptionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +267,7 @@
 		D491A69D25BF5A4600A0779F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D491A6A925BF605400A0779F /* Labels */,
 				D491A69E25BF5A4E00A0779F /* Buttons */,
 			);
 			path = Views;
@@ -267,6 +280,19 @@
 				D491A6A425BF5B1100A0779F /* CLSecondaryButton.swift */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		D491A6A925BF605400A0779F /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				D491A6AA25BF606300A0779F /* CLTitleView.swift */,
+				D491A6B225BF60B200A0779F /* CLSubTitleView.swift */,
+				D491A6B725BF60D800A0779F /* CLHeaderView.swift */,
+				D491A6BC25BF60F600A0779F /* CLSubHeaderView.swift */,
+				D491A6C125BF611A00A0779F /* CLBodyView.swift */,
+				D491A6C625BF613500A0779F /* CLCaptionView.swift */,
+			);
+			path = Labels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -412,10 +438,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D491A67825BF575E00A0779F /* Fonts.swift in Sources */,
+				D491A6AB25BF606300A0779F /* CLTitleView.swift in Sources */,
 				D491A63925BF543C00A0779F /* ContentView.swift in Sources */,
 				D491A6A025BF5A5C00A0779F /* CLPrimaryButton.swift in Sources */,
+				D491A6B825BF60D800A0779F /* CLHeaderView.swift in Sources */,
 				D491A6A525BF5B1100A0779F /* CLSecondaryButton.swift in Sources */,
+				D491A6B325BF60B200A0779F /* CLSubTitleView.swift in Sources */,
+				D491A6BD25BF60F600A0779F /* CLSubHeaderView.swift in Sources */,
 				D491A63725BF543C00A0779F /* Codelathe_Test_SwiftUIApp.swift in Sources */,
+				D491A6C225BF611A00A0779F /* CLBodyView.swift in Sources */,
+				D491A6C725BF613500A0779F /* CLCaptionView.swift in Sources */,
 				D491A67125BF562F00A0779F /* AppColours.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
