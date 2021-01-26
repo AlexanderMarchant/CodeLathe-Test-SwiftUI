@@ -26,7 +26,7 @@ struct ShowcaseDetailView: View {
                 CLHeaderTextView(text: "Description")
                 CLBodyTextView(text: showcaseDetailViewModel.showcase.description)
                 
-                CLHeaderTextView(text: "Technologies")
+                CLHeaderTextView(text: "Technologies Used")
                 
                 VStack(alignment: .leading, spacing: 15) {
                     ForEach(showcaseDetailViewModel.showcase.technologiesUsed, id: \String.self) { tech in

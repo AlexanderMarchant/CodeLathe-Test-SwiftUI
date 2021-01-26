@@ -24,7 +24,10 @@ struct NavigationConfigurationViewModifier: ViewModifier {
         
         let coloredAppearance = UINavigationBarAppearance()
         coloredAppearance.configureWithTransparentBackground()
-        
+        coloredAppearance.titleTextAttributes = [
+            NSAttributedString.Key.font: UIFont(name: "Inter-SemiBold", size: 18)!,
+            NSAttributedString.Key.foregroundColor: UIColor.body
+        ]
         coloredAppearance.backgroundColor = UIColor.background
         coloredAppearance.backgroundImage = UIImage()
         coloredAppearance.shadowImage = UIImage()

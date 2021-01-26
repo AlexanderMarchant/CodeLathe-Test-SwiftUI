@@ -49,6 +49,7 @@ struct GiphyView: View {
                 
                 Button(action: {
                     self.giphyViewModel.getGifs(by: .bySearchTerm, searchTerm: self.searchTerm)
+                    self.searchTerm = ""
                 }, label: {
                     Text("Search")
                         .font(Fonts.buttonFont)
