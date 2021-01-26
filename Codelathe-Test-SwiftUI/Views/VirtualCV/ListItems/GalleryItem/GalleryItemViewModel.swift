@@ -29,7 +29,6 @@ public class GalleryItemViewModel: ObservableObject {
     func downloadProjectImage() {
         
         guard let url = URL(string: self.galleryItem.displayImageUrl) else {
-            print("No display image url...")
             return
         }
         

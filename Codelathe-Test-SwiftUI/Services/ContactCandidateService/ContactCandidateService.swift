@@ -34,12 +34,24 @@ class ContactCandidateService: NSObject {
             
             vc.setMessageBody(message, isHTML: true)
             
-            UIApplication.shared.windows.last?.rootViewController?.present(vc, animated: true, completion: nil)
+            DispatchQueue.main.async {
+                UIApplication.shared.windows.last?.rootViewController?.present(vc, animated: true, completion: nil)
+            }
+            
         } else {
-            print("Show an error alert")
-//            AlertHandlerService.shared.showWarningAlert(
-//                view: viewController,
-//                message: "cannot_send_email_error")
+            let alert = UIAlertController(
+                title: "Warning",
+                message: "To send an email through the app, you must first connect an email to the mail app.",
+                preferredStyle: UIAlertController.Style.alert)
+            
+            alert.addAction(UIAlertAction(
+                title: "Ok",
+                style: UIAlertAction.Style.default,
+                handler: nil))
+            
+            DispatchQueue.main.async {
+                UIApplication.shared.windows.last?.rootViewController?.present(alert, animated: true, completion: nil)
+            }
         }
     }
     

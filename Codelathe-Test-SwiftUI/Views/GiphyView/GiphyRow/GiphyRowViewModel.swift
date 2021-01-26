@@ -30,7 +30,6 @@ public class GiphyRowViewModel: ObservableObject {
         
         // Showing downloading of image myself and not through SDWebImageSwiftUI
         guard let url = self.gif.gifUrl else {
-            print("No gif url...")
             return
         }
         

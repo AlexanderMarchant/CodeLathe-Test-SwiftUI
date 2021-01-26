@@ -12,10 +12,12 @@ struct GiphyView: View {
     @ObservedObject var giphyViewModel: GiphyViewModel
     
     @State var searchTerm: String = ""
+    @State private var showingErrorAlert = false
     
     var body: some View {
         
         VStack(spacing: 0) {
+            
             
             List(0 ..< giphyViewModel.gifs.count, id: \.self) { index in
                 
@@ -26,6 +28,11 @@ struct GiphyView: View {
                 )
                 .animation(.default)
                 .onAppear() {
+                    
+                    if(giphyViewModel.showAlert) {
+                        self.showingErrorAlert.toggle()
+                        self.giphyViewModel.resetAlert()
+                    }
                     
                     // Preload instead of doing it on the last cell
                     if(index == giphyViewModel.gifs.count - 2) {
@@ -60,7 +67,13 @@ struct GiphyView: View {
             .padding(.horizontal, 25)
             
         }
-        
+        .alert(isPresented: $showingErrorAlert) {
+            return Alert(
+                title: Text("Loading Failed"),
+                message: Text("Something went wrong whilst loading the gifs, please try again"),
+                dismissButton: .default(Text("OK"))
+            )
+        }
         .navigationBarTitle("Gift Of Gifs")
         .navigationBarTitleDisplayMode(.inline)
         .navigationBarItems(

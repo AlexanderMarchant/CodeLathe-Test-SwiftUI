@@ -29,7 +29,6 @@ public class ShowcaseDetailViewModel: ObservableObject {
     func downloadProjectImage() {
         
         guard let url = URL(string: self.showcase.displayImageUrl) else {
-            print("No display image url...")
             return
         }
         
