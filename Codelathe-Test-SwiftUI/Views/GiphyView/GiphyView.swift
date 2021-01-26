@@ -16,8 +16,8 @@ struct GiphyView: View {
     
     var body: some View {
         
-        VStack(spacing: 0) {
-            
+        LoadingView(isShowing: .constant(giphyViewModel.isLoading)) {
+            VStack(spacing: 0) {
             
             List(0 ..< giphyViewModel.gifs.count, id: \.self) { index in
                 
@@ -66,6 +66,7 @@ struct GiphyView: View {
             .padding(.vertical, 15)
             .padding(.horizontal, 25)
             
+        }
         }
         .alert(isPresented: $showingErrorAlert) {
             return Alert(

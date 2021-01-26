@@ -14,6 +14,8 @@ public class GiphyViewModel: ObservableObject {
     let giphyService: GiphyServiceProtocol
     
     @Published private (set) var showAlert = false
+    @Published private (set) var isLoading = false
+    
     @Published var gifs = [Gif]()
     
     private (set) var currentSearch: GiphySearch?
@@ -28,7 +30,15 @@ public class GiphyViewModel: ObservableObject {
     }
     
     func resetAlert() {
-        self.showAlert = false
+        DispatchQueue.main.async {
+            self.showAlert = false
+        }
+    }
+    
+    func isLoading(_ isLoading: Bool) {
+        DispatchQueue.main.async {
+            self.isLoading = isLoading
+        }
     }
     
     func getGifs(by searchType: GiphySearch, searchTerm: String? = nil) {
@@ -75,10 +85,14 @@ public class GiphyViewModel: ObservableObject {
             return
         }
         
+        isLoading(true)
+        
         self.currentSearch = .bySearchTerm
         self.currentSearchTerm = search
         
         self.giphyService.getGifsBySearchTerm(search: search, limit: 15) { [weak self] (gifs, error) in
+            
+            self?.isLoading(false)
             
             if let gifs = gifs,
                error == nil {
@@ -102,6 +116,7 @@ public class GiphyViewModel: ObservableObject {
                     self?.showAlert = true
                 }
             }
+            
         }
         
     }
@@ -110,7 +125,12 @@ public class GiphyViewModel: ObservableObject {
         
         self.currentSearch = .trending
         
+        isLoading(true)
+        
         self.giphyService.getTrendingGifs(limit: 15) { [weak self] (gifs, error) in
+            
+            self?.isLoading(false)
+            
             if let gifs = gifs,
                error == nil {
                 
