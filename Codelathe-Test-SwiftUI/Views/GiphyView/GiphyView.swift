@@ -18,55 +18,70 @@ struct GiphyView: View {
         
         LoadingView(isShowing: .constant(giphyViewModel.isLoading)) {
             VStack(spacing: 0) {
-            
-            List(0 ..< giphyViewModel.gifs.count, id: \.self) { index in
                 
-                GiphyRowView(
-                    giphyRowViewModel: GiphyRowViewModel(
-                        gif: self.giphyViewModel.gifs[index],
-                        self.giphyViewModel.urlSessionService)
-                )
-                .animation(.default)
-                .onAppear() {
-                    
-                    if(giphyViewModel.showAlert) {
-                        self.showingErrorAlert.toggle()
-                        self.giphyViewModel.resetAlert()
+                if giphyViewModel.gifs.count == 0 {
+                    VStack(alignment: .center, spacing: 15) {
+                        Spacer()
+                        Image("image-search-icon")
+                            .resizable()
+                            .renderingMode(.template)
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 50, height: 50)
+                            .foregroundColor(Color.body)
+                        CLSubTitleTextView(text: "No Gifs Found")
+                        CLSubHeaderTextView(text: "No gifs could be found, try searching again.")
+                        Spacer()
                     }
-                    
-                    // Preload instead of doing it on the last cell
-                    if(index == giphyViewModel.gifs.count - 2) {
-                        self.giphyViewModel.loadNextGifSet()
+                } else {
+                    List(0 ..< giphyViewModel.gifs.count, id: \.self) { index in
+                        
+                        GiphyRowView(
+                            giphyRowViewModel: GiphyRowViewModel(
+                                gif: self.giphyViewModel.gifs[index],
+                                self.giphyViewModel.urlSessionService)
+                        )
+                        .animation(.default)
+                        .onAppear() {
+                            
+                            if(giphyViewModel.showAlert) {
+                                self.showingErrorAlert.toggle()
+                                self.giphyViewModel.resetAlert()
+                            }
+                            
+                            // Preload instead of doing it on the last cell
+                            if(index == giphyViewModel.gifs.count - 2) {
+                                self.giphyViewModel.loadNextGifSet()
+                            }
+                        }
+                        
                     }
                 }
                 
-            }
-            
-            Divider()
-            HStack(spacing: 16) {
-                TextField("Search gifs by search term", text: $searchTerm)
-                    .font(Fonts.bodyFont)
-                    .padding(8)
-                    .cornerRadius(5)
-                    .background(Color.background)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 5)
-                            .stroke(Color.borders, lineWidth: 1)
-                    )
+                Divider()
+                HStack(spacing: 16) {
+                    TextField("Search gifs by search term", text: $searchTerm)
+                        .font(Fonts.bodyFont)
+                        .padding(8)
+                        .cornerRadius(5)
+                        .background(Color.background)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 5)
+                                .stroke(Color.borders, lineWidth: 1)
+                        )
+                    
+                    Button(action: {
+                        self.giphyViewModel.getGifs(by: .bySearchTerm, searchTerm: self.searchTerm)
+                        self.searchTerm = ""
+                    }, label: {
+                        Text("Search")
+                            .font(Fonts.buttonFont)
+                            .foregroundColor(Color.body)
+                    })
+                }
+                .padding(.vertical, 15)
+                .padding(.horizontal, 25)
                 
-                Button(action: {
-                    self.giphyViewModel.getGifs(by: .bySearchTerm, searchTerm: self.searchTerm)
-                    self.searchTerm = ""
-                }, label: {
-                    Text("Search")
-                        .font(Fonts.buttonFont)
-                        .foregroundColor(Color.body)
-                })
             }
-            .padding(.vertical, 15)
-            .padding(.horizontal, 25)
-            
-        }
         }
         .alert(isPresented: $showingErrorAlert) {
             return Alert(
