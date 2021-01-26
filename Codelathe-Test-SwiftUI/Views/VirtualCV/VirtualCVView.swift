@@ -28,6 +28,8 @@ struct VirtualCVView: View {
                         
                         CLSubTitleTextView(text: "\(candidate.firstName) \(candidate.lastName)")
                         
+//                        Spacer()
+                        
                         Rectangle()
                             .frame(width: 1, height: 50)
                             .foregroundColor(Color.body)
@@ -40,6 +42,8 @@ struct VirtualCVView: View {
                                     .frame(width: 25, height: 25)
                                     .foregroundColor(Color.codeLathe)
                                 CLSubHeaderTextView(text: candidate.emailAddress)
+                                    .lineLimit(1)
+                                    .truncationMode(.middle)
                             }
                             HStack {
                                 Image("phone-icon")
@@ -53,13 +57,9 @@ struct VirtualCVView: View {
                         
                     }
                     
-                    ScrollView(.vertical, showsIndicators: false) {
-                        HStack(spacing: 15) {
-                            ForEach(0 ..< candidate.skills.count) { index in
-                                SkillItemView(skill: candidate.skills[index])
-                            }
-                        }
-                    }
+                    // This tag view works out height at run-time, therefore the preview doesn't work properly
+                    CLHeaderTextView(text: "Skills")
+                    SkillsTagView(skills: candidate.skills)
                     
                     CLHeaderTextView(text: "Bio")
                     CLBodyTextView(text: candidate.bio)
