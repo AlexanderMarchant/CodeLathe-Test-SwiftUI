@@ -42,6 +42,7 @@ struct GiphyView: View {
                     .font(Fonts.bodyFont)
                     .padding(8)
                     .cornerRadius(5)
+                    .background(Color.background)
                     .overlay(
                         RoundedRectangle(cornerRadius: 5)
                             .stroke(Color.borders, lineWidth: 1)
@@ -55,7 +56,6 @@ struct GiphyView: View {
                         .foregroundColor(Color.body)
                 })
             }
-            .background(Color.background)
             .padding(.top, 15)
             .padding(.leading, 25)
             .padding(.trailing, 25)

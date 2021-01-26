@@ -53,6 +53,7 @@ struct ShowcaseDetailView: View {
             }
             .padding(25)
         }
+        .background(Color.background)
         .navigationBarTitleDisplayMode(.large)
         .navigationBarTitle(showcaseDetailViewModel.showcase.title)
     }

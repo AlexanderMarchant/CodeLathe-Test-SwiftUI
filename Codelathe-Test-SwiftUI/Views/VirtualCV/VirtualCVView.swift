@@ -28,7 +28,7 @@ struct VirtualCVView: View {
                         
                         CLSubTitleTextView(text: "\(candidate.firstName) \(candidate.lastName)")
                         
-//                        Spacer()
+                        Spacer()
                         
                         Rectangle()
                             .frame(width: 1, height: 50)
@@ -60,6 +60,8 @@ struct VirtualCVView: View {
                                         .foregroundColor(Color.codeLathe)
                                 })
                                 CLSubHeaderTextView(text: candidate.phoneNumber)
+                                    .lineLimit(1)
+                                    .truncationMode(.middle)
                             }
                         }
                         
@@ -91,6 +93,16 @@ struct VirtualCVView: View {
                                         galleryItem: candidate.gallery.showcases[index],
                                         UrlSessionService()))
                             }
+                            .contextMenu(
+                                ContextMenu(menuItems: {
+                                    Button("Take A Look", action: {
+                                        if let url = candidate.gallery.showcases[index].projectLink {
+                                            UIApplication.shared.open(URL(string: url)!)
+                                        }
+                                    })
+                                    .disabled(candidate.gallery.showcases[index].projectLink == nil)
+                                })
+                            )
                             
                         }
                     }
@@ -111,6 +123,7 @@ struct VirtualCVView: View {
                         .font(Fonts.buttonFont)
                         .foregroundColor(Color.body)
                 })
+        .background(Color.background)
     }
 }
 
