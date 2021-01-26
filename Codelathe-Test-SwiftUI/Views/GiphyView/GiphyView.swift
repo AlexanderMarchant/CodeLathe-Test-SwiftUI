@@ -46,7 +46,7 @@ struct GiphyView: View {
                         RoundedRectangle(cornerRadius: 5)
                             .stroke(Color.borders, lineWidth: 1)
                     )
-                    
+                
                 Button(action: {
                     self.giphyViewModel.getGifs(by: .bySearchTerm, searchTerm: self.searchTerm)
                 }, label: {
@@ -61,6 +61,28 @@ struct GiphyView: View {
             .padding(.trailing, 25)
             
         }
+        
+        .navigationBarTitle("Gift Of Gifs")
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarItems(
+            leading:
+                Button(action: {
+                    self.giphyViewModel.getGifs(by: .trending)
+                    self.searchTerm = ""
+                }) {
+                    Text("Trending")
+                        .font(Fonts.buttonFont)
+                        .foregroundColor(Color.body)
+                },
+            trailing: NavigationLink(
+                destination: VirtualCVView(virtualCVViewModel: VirtualCVViewModel(candidate: candidate))) {
+                Text("CV")
+                    .font(Fonts.buttonFont)
+                    .foregroundColor(Color.body)
+            }
+            
+            
+        )
         
     }
 }

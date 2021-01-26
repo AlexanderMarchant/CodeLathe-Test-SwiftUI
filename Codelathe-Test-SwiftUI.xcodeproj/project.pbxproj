@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D47D355E25BF9F29009C9D26 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D47D355D25BF9F29009C9D26 /* Icons.xcassets */; };
 		D491A63725BF543C00A0779F /* Codelathe_Test_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A63625BF543C00A0779F /* Codelathe_Test_SwiftUIApp.swift */; };
 		D491A63925BF543C00A0779F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A63825BF543C00A0779F /* ContentView.swift */; };
 		D491A63B25BF543F00A0779F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D491A63A25BF543F00A0779F /* Assets.xcassets */; };
@@ -51,6 +52,15 @@
 		D491A72C25BF6B9800A0779F /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A72A25BF6B9800A0779F /* APIResponse.swift */; };
 		D491A73225BF6BAD00A0779F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A73125BF6BAD00A0779F /* Constants.swift */; };
 		D491A73A25BF8D8400A0779F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A73925BF8D8300A0779F /* AppDelegate.swift */; };
+		D491A74125BF91DB00A0779F /* VirtualCVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A74025BF91DB00A0779F /* VirtualCVView.swift */; };
+		D491A74925BF91E400A0779F /* VirtualCVViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A74825BF91E400A0779F /* VirtualCVViewModel.swift */; };
+		D491A75225BF920800A0779F /* SkillItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A75125BF920800A0779F /* SkillItemView.swift */; };
+		D491A76025BF923900A0779F /* GalleryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A75F25BF923900A0779F /* GalleryItemView.swift */; };
+		D491A76825BF924100A0779F /* GalleryItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A76725BF924100A0779F /* GalleryItemViewModel.swift */; };
+		D491A77425BF92BA00A0779F /* CandidateSkill.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A76E25BF92B900A0779F /* CandidateSkill.swift */; };
+		D491A77525BF92BA00A0779F /* Candidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A77025BF92BA00A0779F /* Candidate.swift */; };
+		D491A77625BF92BA00A0779F /* CandidateGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A77225BF92BA00A0779F /* CandidateGallery.swift */; };
+		D491A77725BF92BA00A0779F /* GalleryShowcase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A77325BF92BA00A0779F /* GalleryShowcase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +81,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D47D355D25BF9F29009C9D26 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		D491A63325BF543C00A0779F /* Codelathe-Test-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Codelathe-Test-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D491A63625BF543C00A0779F /* Codelathe_Test_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codelathe_Test_SwiftUIApp.swift; sourceTree = "<group>"; };
 		D491A63825BF543C00A0779F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -121,6 +132,15 @@
 		D491A72A25BF6B9800A0779F /* APIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		D491A73125BF6BAD00A0779F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D491A73925BF8D8300A0779F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D491A74025BF91DB00A0779F /* VirtualCVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCVView.swift; sourceTree = "<group>"; };
+		D491A74825BF91E400A0779F /* VirtualCVViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCVViewModel.swift; sourceTree = "<group>"; };
+		D491A75125BF920800A0779F /* SkillItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillItemView.swift; sourceTree = "<group>"; };
+		D491A75F25BF923900A0779F /* GalleryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryItemView.swift; sourceTree = "<group>"; };
+		D491A76725BF924100A0779F /* GalleryItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryItemViewModel.swift; sourceTree = "<group>"; };
+		D491A76E25BF92B900A0779F /* CandidateSkill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidateSkill.swift; sourceTree = "<group>"; };
+		D491A77025BF92BA00A0779F /* Candidate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Candidate.swift; sourceTree = "<group>"; };
+		D491A77225BF92BA00A0779F /* CandidateGallery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidateGallery.swift; sourceTree = "<group>"; };
+		D491A77325BF92BA00A0779F /* GalleryShowcase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryShowcase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				D491A63A25BF543F00A0779F /* Assets.xcassets */,
+				D47D355D25BF9F29009C9D26 /* Icons.xcassets */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -361,6 +382,7 @@
 		D491A6DA25BF62C900A0779F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D491A73E25BF91B800A0779F /* VirtualCV */,
 				D491A6DB25BF62CF00A0779F /* GiphyView */,
 			);
 			path = Views;
@@ -434,6 +456,86 @@
 				D491A73125BF6BAD00A0779F /* Constants.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		D491A73E25BF91B800A0779F /* VirtualCV */ = {
+			isa = PBXGroup;
+			children = (
+				D491A74025BF91DB00A0779F /* VirtualCVView.swift */,
+				D491A74825BF91E400A0779F /* VirtualCVViewModel.swift */,
+				D491A76C25BF929E00A0779F /* Models */,
+				D491A77E25BF997700A0779F /* ListItems */,
+				D491A73F25BF91C200A0779F /* ViewShowcase */,
+			);
+			path = VirtualCV;
+			sourceTree = "<group>";
+		};
+		D491A73F25BF91C200A0779F /* ViewShowcase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewShowcase;
+			sourceTree = "<group>";
+		};
+		D491A75025BF91EA00A0779F /* SkillItem */ = {
+			isa = PBXGroup;
+			children = (
+				D491A75125BF920800A0779F /* SkillItemView.swift */,
+			);
+			path = SkillItem;
+			sourceTree = "<group>";
+		};
+		D491A75E25BF922100A0779F /* GalleryItem */ = {
+			isa = PBXGroup;
+			children = (
+				D491A75F25BF923900A0779F /* GalleryItemView.swift */,
+				D491A76725BF924100A0779F /* GalleryItemViewModel.swift */,
+			);
+			path = GalleryItem;
+			sourceTree = "<group>";
+		};
+		D491A76C25BF929E00A0779F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D491A76F25BF92BA00A0779F /* Candidate */,
+				D491A77125BF92BA00A0779F /* Gallery */,
+				D491A76D25BF92B900A0779F /* Skills */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D491A76D25BF92B900A0779F /* Skills */ = {
+			isa = PBXGroup;
+			children = (
+				D491A76E25BF92B900A0779F /* CandidateSkill.swift */,
+			);
+			path = Skills;
+			sourceTree = "<group>";
+		};
+		D491A76F25BF92BA00A0779F /* Candidate */ = {
+			isa = PBXGroup;
+			children = (
+				D491A77025BF92BA00A0779F /* Candidate.swift */,
+			);
+			path = Candidate;
+			sourceTree = "<group>";
+		};
+		D491A77125BF92BA00A0779F /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				D491A77225BF92BA00A0779F /* CandidateGallery.swift */,
+				D491A77325BF92BA00A0779F /* GalleryShowcase.swift */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
+		D491A77E25BF997700A0779F /* ListItems */ = {
+			isa = PBXGroup;
+			children = (
+				D491A75E25BF922100A0779F /* GalleryItem */,
+				D491A75025BF91EA00A0779F /* SkillItem */,
+			);
+			path = ListItems;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -545,6 +647,7 @@
 				D491A66A25BF55F400A0779F /* AppColours.xcassets in Resources */,
 				D491A69525BF57AD00A0779F /* README.txt in Resources */,
 				D491A68E25BF57AD00A0779F /* Inter-Bold.ttf in Resources */,
+				D47D355E25BF9F29009C9D26 /* Icons.xcassets in Resources */,
 				D491A69325BF57AD00A0779F /* Inter-SemiBold.ttf in Resources */,
 				D491A63E25BF543F00A0779F /* Preview Assets.xcassets in Resources */,
 				D491A69025BF57AD00A0779F /* Inter-ExtraBold.ttf in Resources */,
@@ -581,20 +684,27 @@
 				D491A67825BF575E00A0779F /* Fonts.swift in Sources */,
 				D491A72525BF6B7C00A0779F /* GifSupportModels.swift in Sources */,
 				D491A6AB25BF606300A0779F /* CLTitleTextView.swift in Sources */,
+				D491A75225BF920800A0779F /* SkillItemView.swift in Sources */,
 				D491A63925BF543C00A0779F /* ContentView.swift in Sources */,
 				D491A72325BF6B7C00A0779F /* GifTrendModel.swift in Sources */,
 				D491A6F225BF64D300A0779F /* GiphyRowViewModel.swift in Sources */,
 				D491A72B25BF6B9800A0779F /* Result.swift in Sources */,
+				D491A74925BF91E400A0779F /* VirtualCVViewModel.swift in Sources */,
+				D491A76825BF924100A0779F /* GalleryItemViewModel.swift in Sources */,
 				D491A73225BF6BAD00A0779F /* Constants.swift in Sources */,
+				D491A76025BF923900A0779F /* GalleryItemView.swift in Sources */,
 				D491A6A025BF5A5C00A0779F /* CLPrimaryButton.swift in Sources */,
+				D491A74125BF91DB00A0779F /* VirtualCVView.swift in Sources */,
 				D491A6B825BF60D800A0779F /* CLHeaderTextView.swift in Sources */,
 				D491A6A525BF5B1100A0779F /* CLSecondaryButton.swift in Sources */,
 				D491A72425BF6B7C00A0779F /* GifSearchModel.swift in Sources */,
 				D491A70E25BF6A4500A0779F /* GiphyViewModel.swift in Sources */,
+				D491A77525BF92BA00A0779F /* Candidate.swift in Sources */,
 				D491A6DD25BF62DE00A0779F /* GiphyView.swift in Sources */,
 				D491A6B325BF60B200A0779F /* CLSubTitleTextView.swift in Sources */,
 				D491A6BD25BF60F600A0779F /* CLSubHeaderTextView.swift in Sources */,
 				D491A71725BF6B5B00A0779F /* GiphyServiceProtocol.swift in Sources */,
+				D491A77425BF92BA00A0779F /* CandidateSkill.swift in Sources */,
 				D491A6EC25BF635200A0779F /* Gif.swift in Sources */,
 				D491A63725BF543C00A0779F /* Codelathe_Test_SwiftUIApp.swift in Sources */,
 				D491A6E725BF631900A0779F /* GiphyRowView.swift in Sources */,
@@ -603,7 +713,9 @@
 				D491A6C225BF611A00A0779F /* CLBodyTextView.swift in Sources */,
 				D491A6C725BF613500A0779F /* CLCaptionTextView.swift in Sources */,
 				D491A67125BF562F00A0779F /* AppColours.swift in Sources */,
+				D491A77725BF92BA00A0779F /* GalleryShowcase.swift in Sources */,
 				D491A72C25BF6B9800A0779F /* APIResponse.swift in Sources */,
+				D491A77625BF92BA00A0779F /* CandidateGallery.swift in Sources */,
 				D491A71825BF6B5B00A0779F /* GiphyService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
