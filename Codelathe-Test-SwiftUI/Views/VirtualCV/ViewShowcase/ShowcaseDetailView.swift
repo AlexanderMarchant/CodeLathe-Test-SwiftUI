@@ -30,7 +30,7 @@ struct ShowcaseDetailView: View {
                 
                 HStack {
                     ForEach(showcaseDetailViewModel.showcase.technologiesUsed, id: \String.self) { tech in
-                        Text(tech)
+                        CLBodyTextView(text: tech)
                         // Showcase something cool here
                     }
                 }
@@ -39,7 +39,7 @@ struct ShowcaseDetailView: View {
                 
                 VStack(alignment: .leading, spacing: 15) {
                     ForEach(showcaseDetailViewModel.showcase.challenges, id: \String.self) { challenge in
-                        Text(challenge)
+                        CLBodyTextView(text: challenge)
                         // Showcase something cool here
                     }
                 }
