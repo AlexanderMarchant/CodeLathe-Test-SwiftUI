@@ -28,10 +28,9 @@ struct ShowcaseDetailView: View {
                 
                 CLHeaderTextView(text: "Technologies")
                 
-                HStack {
+                VStack(alignment: .leading, spacing: 15) {
                     ForEach(showcaseDetailViewModel.showcase.technologiesUsed, id: \String.self) { tech in
                         CLBodyTextView(text: tech)
-                        // Showcase something cool here
                     }
                 }
                 
@@ -40,7 +39,6 @@ struct ShowcaseDetailView: View {
                 VStack(alignment: .leading, spacing: 15) {
                     ForEach(showcaseDetailViewModel.showcase.challenges, id: \String.self) { challenge in
                         CLBodyTextView(text: challenge)
-                        // Showcase something cool here
                     }
                 }
                 
@@ -53,7 +51,6 @@ struct ShowcaseDetailView: View {
             }
             .padding(25)
         }
-        .background(Color.background)
         .navigationBarTitleDisplayMode(.large)
         .navigationBarTitle(showcaseDetailViewModel.showcase.title)
     }

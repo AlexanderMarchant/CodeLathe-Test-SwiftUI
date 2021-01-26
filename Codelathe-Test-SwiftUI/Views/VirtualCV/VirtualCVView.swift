@@ -123,7 +123,6 @@ struct VirtualCVView: View {
                         .font(Fonts.buttonFont)
                         .foregroundColor(Color.body)
                 })
-        .background(Color.background)
     }
 }
 

@@ -9,6 +9,8 @@ import SwiftUI
 
 struct GalleryItemView: View {
     
+    @Environment(\.colorScheme) var colorScheme
+    
     @ObservedObject var galleryItemViewModel: GalleryItemViewModel
     
     var body: some View {
@@ -17,7 +19,7 @@ struct GalleryItemView: View {
                 .background(Color.background)
                 .foregroundColor(Color.background)
                 .cornerRadius(5)
-                .shadow(color: .init(white: 0.65), radius: 3, x: 0, y: 5)
+                .shadow(color: (colorScheme == .dark ? Color.clear : .init(white: 0.65)), radius: 3, x: 0, y: 5)
                 .overlay(
                     RoundedRectangle(cornerRadius: 5)
                         .stroke(Color.galleryCellBorder, lineWidth: 1)

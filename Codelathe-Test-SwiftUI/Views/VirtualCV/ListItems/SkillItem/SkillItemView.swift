@@ -9,6 +9,8 @@ import SwiftUI
 
 struct SkillItemView: View {
     
+    @Environment(\.colorScheme) var colorScheme
+    
     var skill: CandidateSkill
     
     var body: some View {
@@ -23,7 +25,7 @@ struct SkillItemView: View {
                 RoundedRectangle(cornerRadius: 30)
                     .stroke(Color.skillCellBackground)
             )
-            .shadow(color: .gray, radius: 5, x: 0, y: 3)
+            .shadow(color: (colorScheme == .dark ? Color.clear : Color.gray), radius: 5, x: 0, y: 3)
     }
 }
 

@@ -17,6 +17,23 @@ extension View {
 
 struct NavigationConfigurationViewModifier: ViewModifier {
     let configure: (UINavigationController) -> Void
+    
+    init(configure: @escaping((UINavigationController) -> Void)) {
+        
+        self.configure = configure
+        
+        let coloredAppearance = UINavigationBarAppearance()
+        coloredAppearance.configureWithTransparentBackground()
+        
+        coloredAppearance.backgroundColor = UIColor.background
+        coloredAppearance.backgroundImage = UIImage()
+        coloredAppearance.shadowImage = UIImage()
+        
+        UINavigationBar.appearance().standardAppearance = coloredAppearance
+        UINavigationBar.appearance().compactAppearance = coloredAppearance
+        UINavigationBar.appearance().scrollEdgeAppearance = coloredAppearance
+        
+    }
 
     func body(content: Content) -> some View {
         content.background(NavigationConfigurator(configure: configure))

@@ -35,7 +35,6 @@ struct GiphyView: View {
                 
             }
             
-            // Handle opening of the keyboard
             Divider()
             HStack(spacing: 16) {
                 TextField("Search gifs by search term", text: $searchTerm)
@@ -56,9 +55,8 @@ struct GiphyView: View {
                         .foregroundColor(Color.body)
                 })
             }
-            .padding(.top, 15)
-            .padding(.leading, 25)
-            .padding(.trailing, 25)
+            .padding(.vertical, 15)
+            .padding(.horizontal, 25)
             
         }
         
