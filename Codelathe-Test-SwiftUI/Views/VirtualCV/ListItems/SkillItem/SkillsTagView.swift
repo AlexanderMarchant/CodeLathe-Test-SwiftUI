@@ -12,8 +12,11 @@ struct SkillsTagView: View {
     var skills: [CandidateSkill]
 
     @State private var totalHeight
-          = CGFloat.zero       // << variant for ScrollView/List
-    //    = CGFloat.infinity   // << variant for VStack
+        // Use this if I want to use for a ScrollView/List
+          = CGFloat.zero
+    
+    // Use this if I want to use for a VStack
+    //    = CGFloat.infinity
 
     var body: some View {
         VStack {
@@ -21,8 +24,12 @@ struct SkillsTagView: View {
                 self.generateContent(in: geometry)
             }
         }
-        .frame(height: totalHeight)// << variant for ScrollView/List
-        //.frame(maxHeight: totalHeight) // << variant for VStack
+        
+        // Use this if I want to use for a ScrollView/List
+        .frame(height: totalHeight)
+        
+        // Use this if I want to use for a VStack
+        //.frame(maxHeight: totalHeight)
     }
 
     private func generateContent(in g: GeometryProxy) -> some View {
