@@ -39,3 +39,22 @@ extension Color {
     }
     
 }
+
+extension UIColor {
+    
+    static var background: UIColor  {
+        return UIColor(named: "background")!
+    }
+    
+    static var body: UIColor  {
+        return UIColor(named: "body")!
+    }
+    
+    static var codeLathe: UIColor  {
+        return UIColor(named: "codeLathe")!
+    }
+    
+    static var navigationBarButtonFill: UIColor  {
+        return UIColor(named: "navigationBarButtonFill")!
+    }
+}

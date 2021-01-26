@@ -11,6 +11,9 @@
 		D47D356325C03750009C9D26 /* SkillsTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47D356225C03750009C9D26 /* SkillsTagView.swift */; };
 		D47D356825C03E36009C9D26 /* ShowcaseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47D356725C03E36009C9D26 /* ShowcaseDetailView.swift */; };
 		D47D356D25C04472009C9D26 /* ShowcaseDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47D356C25C04472009C9D26 /* ShowcaseDetailViewModel.swift */; };
+		D47D357425C05618009C9D26 /* ContactCandidateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47D357225C05617009C9D26 /* ContactCandidateService.swift */; };
+		D47D357525C05618009C9D26 /* ContactCandidateServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47D357325C05617009C9D26 /* ContactCandidateServiceProtocol.swift */; };
+		D47D357E25C06069009C9D26 /* NavigationBarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47D357D25C06069009C9D26 /* NavigationBarConfigurator.swift */; };
 		D491A63725BF543C00A0779F /* Codelathe_Test_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A63625BF543C00A0779F /* Codelathe_Test_SwiftUIApp.swift */; };
 		D491A63925BF543C00A0779F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A63825BF543C00A0779F /* ContentView.swift */; };
 		D491A63B25BF543F00A0779F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D491A63A25BF543F00A0779F /* Assets.xcassets */; };
@@ -54,7 +57,6 @@
 		D491A72B25BF6B9800A0779F /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A72925BF6B9800A0779F /* Result.swift */; };
 		D491A72C25BF6B9800A0779F /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A72A25BF6B9800A0779F /* APIResponse.swift */; };
 		D491A73225BF6BAD00A0779F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A73125BF6BAD00A0779F /* Constants.swift */; };
-		D491A73A25BF8D8400A0779F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A73925BF8D8300A0779F /* AppDelegate.swift */; };
 		D491A74125BF91DB00A0779F /* VirtualCVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A74025BF91DB00A0779F /* VirtualCVView.swift */; };
 		D491A74925BF91E400A0779F /* VirtualCVViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A74825BF91E400A0779F /* VirtualCVViewModel.swift */; };
 		D491A75225BF920800A0779F /* SkillItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A75125BF920800A0779F /* SkillItemView.swift */; };
@@ -88,6 +90,9 @@
 		D47D356225C03750009C9D26 /* SkillsTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsTagView.swift; sourceTree = "<group>"; };
 		D47D356725C03E36009C9D26 /* ShowcaseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowcaseDetailView.swift; sourceTree = "<group>"; };
 		D47D356C25C04472009C9D26 /* ShowcaseDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowcaseDetailViewModel.swift; sourceTree = "<group>"; };
+		D47D357225C05617009C9D26 /* ContactCandidateService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCandidateService.swift; sourceTree = "<group>"; };
+		D47D357325C05617009C9D26 /* ContactCandidateServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCandidateServiceProtocol.swift; sourceTree = "<group>"; };
+		D47D357D25C06069009C9D26 /* NavigationBarConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarConfigurator.swift; sourceTree = "<group>"; };
 		D491A63325BF543C00A0779F /* Codelathe-Test-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Codelathe-Test-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D491A63625BF543C00A0779F /* Codelathe_Test_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codelathe_Test_SwiftUIApp.swift; sourceTree = "<group>"; };
 		D491A63825BF543C00A0779F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -137,7 +142,6 @@
 		D491A72925BF6B9800A0779F /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		D491A72A25BF6B9800A0779F /* APIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		D491A73125BF6BAD00A0779F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		D491A73925BF8D8300A0779F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D491A74025BF91DB00A0779F /* VirtualCVView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCVView.swift; sourceTree = "<group>"; };
 		D491A74825BF91E400A0779F /* VirtualCVViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCVViewModel.swift; sourceTree = "<group>"; };
 		D491A75125BF920800A0779F /* SkillItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillItemView.swift; sourceTree = "<group>"; };
@@ -174,6 +178,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D47D357125C05617009C9D26 /* ContactCandidateService */ = {
+			isa = PBXGroup;
+			children = (
+				D47D357225C05617009C9D26 /* ContactCandidateService.swift */,
+				D47D357325C05617009C9D26 /* ContactCandidateServiceProtocol.swift */,
+			);
+			path = ContactCandidateService;
+			sourceTree = "<group>";
+		};
+		D47D357C25C06055009C9D26 /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				D47D357D25C06069009C9D26 /* NavigationBarConfigurator.swift */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
 		D491A62A25BF543B00A0779F = {
 			isa = PBXGroup;
 			children = (
@@ -206,7 +227,6 @@
 				D491A63825BF543C00A0779F /* ContentView.swift */,
 				D491A63F25BF543F00A0779F /* Info.plist */,
 				D491A63C25BF543F00A0779F /* Preview Content */,
-				D491A73925BF8D8300A0779F /* AppDelegate.swift */,
 			);
 			path = "Codelathe-Test-SwiftUI";
 			sourceTree = "<group>";
@@ -240,9 +260,9 @@
 		D491A66725BF55D200A0779F /* Content */ = {
 			isa = PBXGroup;
 			children = (
+				D491A66825BF55DF00A0779F /* Colours */,
 				D491A67625BF572300A0779F /* Fonts */,
 				D491A67525BF567100A0779F /* Images */,
-				D491A66825BF55DF00A0779F /* Colours */,
 			);
 			path = Content;
 			sourceTree = "<group>";
@@ -328,6 +348,7 @@
 		D491A69D25BF5A4600A0779F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D47D357C25C06055009C9D26 /* NavigationBar */,
 				D491A6A925BF605400A0779F /* TextViews */,
 				D491A69E25BF5A4E00A0779F /* Buttons */,
 			);
@@ -359,6 +380,7 @@
 		D491A6D725BF629B00A0779F /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				D47D357125C05617009C9D26 /* ContactCandidateService */,
 				D491A6FC25BF651D00A0779F /* UrlSessionService */,
 				D491A6D925BF62BB00A0779F /* API */,
 				D491A6D825BF62A900A0779F /* GiphyService */,
@@ -701,6 +723,7 @@
 				D47D356325C03750009C9D26 /* SkillsTagView.swift in Sources */,
 				D491A74925BF91E400A0779F /* VirtualCVViewModel.swift in Sources */,
 				D491A76825BF924100A0779F /* GalleryItemViewModel.swift in Sources */,
+				D47D357E25C06069009C9D26 /* NavigationBarConfigurator.swift in Sources */,
 				D491A73225BF6BAD00A0779F /* Constants.swift in Sources */,
 				D491A76025BF923900A0779F /* GalleryItemView.swift in Sources */,
 				D491A6A025BF5A5C00A0779F /* CLPrimaryButton.swift in Sources */,
@@ -716,12 +739,13 @@
 				D491A71725BF6B5B00A0779F /* GiphyServiceProtocol.swift in Sources */,
 				D491A77425BF92BA00A0779F /* CandidateSkill.swift in Sources */,
 				D491A6EC25BF635200A0779F /* Gif.swift in Sources */,
+				D47D357425C05618009C9D26 /* ContactCandidateService.swift in Sources */,
 				D47D356D25C04472009C9D26 /* ShowcaseDetailViewModel.swift in Sources */,
 				D491A63725BF543C00A0779F /* Codelathe_Test_SwiftUIApp.swift in Sources */,
 				D491A6E725BF631900A0779F /* GiphyRowView.swift in Sources */,
 				D491A6FF25BF652F00A0779F /* UrlSessionService.swift in Sources */,
-				D491A73A25BF8D8400A0779F /* AppDelegate.swift in Sources */,
 				D491A6C225BF611A00A0779F /* CLBodyTextView.swift in Sources */,
+				D47D357525C05618009C9D26 /* ContactCandidateServiceProtocol.swift in Sources */,
 				D491A6C725BF613500A0779F /* CLCaptionTextView.swift in Sources */,
 				D491A67125BF562F00A0779F /* AppColours.swift in Sources */,
 				D491A77725BF92BA00A0779F /* GalleryShowcase.swift in Sources */,

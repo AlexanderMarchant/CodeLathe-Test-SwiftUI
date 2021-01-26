@@ -36,21 +36,29 @@ struct VirtualCVView: View {
                         
                         VStack(alignment: .leading, spacing: 10) {
                             HStack {
-                                Image("email-icon")
-                                    .resizable()
-                                    .renderingMode(.template)
-                                    .frame(width: 25, height: 25)
-                                    .foregroundColor(Color.codeLathe)
+                                Button(action: {
+                                    virtualCVViewModel.emailCandidate()
+                                }, label: {
+                                    Image("email-icon")
+                                        .resizable()
+                                        .renderingMode(.template)
+                                        .frame(width: 25, height: 25)
+                                        .foregroundColor(Color.codeLathe)
+                                })
                                 CLSubHeaderTextView(text: candidate.emailAddress)
                                     .lineLimit(1)
                                     .truncationMode(.middle)
                             }
                             HStack {
-                                Image("phone-icon")
-                                    .resizable()
-                                    .renderingMode(.template)
-                                    .frame(width: 25, height: 25)
-                                    .foregroundColor(Color.codeLathe)
+                                Button(action: {
+                                    virtualCVViewModel.callCandidate()
+                                }, label: {
+                                    Image("phone-icon")
+                                        .resizable()
+                                        .renderingMode(.template)
+                                        .frame(width: 25, height: 25)
+                                        .foregroundColor(Color.codeLathe)
+                                })
                                 CLSubHeaderTextView(text: candidate.phoneNumber)
                             }
                         }

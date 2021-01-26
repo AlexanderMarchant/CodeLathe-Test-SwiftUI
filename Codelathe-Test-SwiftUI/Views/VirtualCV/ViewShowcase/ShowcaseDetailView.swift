@@ -49,6 +49,7 @@ struct ShowcaseDetailView: View {
                     action: {
                         self.showcaseDetailViewModel.openProjectLink()
                     })
+                    .disabled(showcaseDetailViewModel.showcase.projectLink == nil)
             }
             .padding(25)
         }

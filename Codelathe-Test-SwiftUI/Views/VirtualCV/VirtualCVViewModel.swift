@@ -17,4 +17,12 @@ public class VirtualCVViewModel: ObservableObject {
         self.candidate = candidate
         
     }
+    
+    func emailCandidate() {
+        ContactCandidateService.shared.sendEmail(recipientEmail: candidate.emailAddress, recipientFirstName: candidate.firstName)
+    }
+    
+    func callCandidate() {
+        ContactCandidateService.shared.callNumber(phoneNumber: candidate.phoneNumber)
+    }
 }
