@@ -13,6 +13,7 @@ public class GiphyRowViewModel: ObservableObject {
     let gif: Gif
     let urlSessionService: UrlSessionServiceProtocol
     
+    // Showing downloading of image myself and not through SDWebImageSwiftUI
     @Published var gifData = Data()
     
     init(
@@ -27,6 +28,7 @@ public class GiphyRowViewModel: ObservableObject {
     
     func downloadGif() {
         
+        // Showing downloading of image myself and not through SDWebImageSwiftUI
         guard let url = self.gif.gifUrl else {
             print("No gif url...")
             return

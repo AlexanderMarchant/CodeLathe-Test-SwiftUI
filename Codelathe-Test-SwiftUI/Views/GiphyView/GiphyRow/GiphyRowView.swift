@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct GiphyRowView: View {
     
@@ -15,19 +16,33 @@ struct GiphyRowView: View {
         VStack(alignment: .leading, spacing: 25) {
             HStack(alignment: .center, spacing: 15) {
                 
-                Image(uiImage: (giphyRowViewModel.gifData.isEmpty) ? UIImage(imageLiteralResourceName: "image-not-found") : UIImage(data: giphyRowViewModel.gifData)!)
-                    .resizable()
-                    .renderingMode(.original)
-                    .aspectRatio(contentMode: .fit)
-                    .frame(minWidth: 0, maxWidth: .infinity)
-                    .cornerRadius(10)
-                    .shadow(radius: 10)
-                    .padding(.top)
+                if let gifUrl = giphyRowViewModel.gif.gifUrl {
+                    
+                    AnimatedImage(url: URL(string: gifUrl)!)
+                        .resizable()
+                        .placeholder(UIImage(named: "image-not-found"))
+                        .renderingMode(.original)
+                        .aspectRatio(contentMode: .fit)
+                        .frame(minWidth: 0, maxWidth: .infinity)
+                        .cornerRadius(10)
+                        .shadow(radius: 10)
+                        .padding(.top)
+                    
+                } else {
+                    Image(uiImage: UIImage(imageLiteralResourceName: "image-not-found"))
+                        .resizable()
+                        .renderingMode(.original)
+                        .aspectRatio(contentMode: .fit)
+                        .frame(minWidth: 0, maxWidth: .infinity)
+                        .cornerRadius(10)
+                        .shadow(radius: 10)
+                        .padding(.top)
+                }
             }
             
             HStack(spacing: 15) {
                 
-                // Use the users display picture for this
+                // Showing downloading of image myself and not through SDWebImageSwiftUI
                 Image(uiImage: (giphyRowViewModel.gifData.isEmpty) ? UIImage(imageLiteralResourceName: "image-not-found") : UIImage(data: giphyRowViewModel.gifData)!)
                     .resizable()
                     .renderingMode(.original)
