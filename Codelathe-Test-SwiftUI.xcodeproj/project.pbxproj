@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		D47D355E25BF9F29009C9D26 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D47D355D25BF9F29009C9D26 /* Icons.xcassets */; };
 		D47D356325C03750009C9D26 /* SkillsTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47D356225C03750009C9D26 /* SkillsTagView.swift */; };
+		D47D356825C03E36009C9D26 /* ShowcaseDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47D356725C03E36009C9D26 /* ShowcaseDetailView.swift */; };
+		D47D356D25C04472009C9D26 /* ShowcaseDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47D356C25C04472009C9D26 /* ShowcaseDetailViewModel.swift */; };
 		D491A63725BF543C00A0779F /* Codelathe_Test_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A63625BF543C00A0779F /* Codelathe_Test_SwiftUIApp.swift */; };
 		D491A63925BF543C00A0779F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D491A63825BF543C00A0779F /* ContentView.swift */; };
 		D491A63B25BF543F00A0779F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D491A63A25BF543F00A0779F /* Assets.xcassets */; };
@@ -84,6 +86,8 @@
 /* Begin PBXFileReference section */
 		D47D355D25BF9F29009C9D26 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		D47D356225C03750009C9D26 /* SkillsTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsTagView.swift; sourceTree = "<group>"; };
+		D47D356725C03E36009C9D26 /* ShowcaseDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowcaseDetailView.swift; sourceTree = "<group>"; };
+		D47D356C25C04472009C9D26 /* ShowcaseDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowcaseDetailViewModel.swift; sourceTree = "<group>"; };
 		D491A63325BF543C00A0779F /* Codelathe-Test-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Codelathe-Test-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D491A63625BF543C00A0779F /* Codelathe_Test_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codelathe_Test_SwiftUIApp.swift; sourceTree = "<group>"; };
 		D491A63825BF543C00A0779F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -475,6 +479,8 @@
 		D491A73F25BF91C200A0779F /* ViewShowcase */ = {
 			isa = PBXGroup;
 			children = (
+				D47D356725C03E36009C9D26 /* ShowcaseDetailView.swift */,
+				D47D356C25C04472009C9D26 /* ShowcaseDetailViewModel.swift */,
 			);
 			path = ViewShowcase;
 			sourceTree = "<group>";
@@ -710,6 +716,7 @@
 				D491A71725BF6B5B00A0779F /* GiphyServiceProtocol.swift in Sources */,
 				D491A77425BF92BA00A0779F /* CandidateSkill.swift in Sources */,
 				D491A6EC25BF635200A0779F /* Gif.swift in Sources */,
+				D47D356D25C04472009C9D26 /* ShowcaseDetailViewModel.swift in Sources */,
 				D491A63725BF543C00A0779F /* Codelathe_Test_SwiftUIApp.swift in Sources */,
 				D491A6E725BF631900A0779F /* GiphyRowView.swift in Sources */,
 				D491A6FF25BF652F00A0779F /* UrlSessionService.swift in Sources */,
@@ -718,6 +725,7 @@
 				D491A6C725BF613500A0779F /* CLCaptionTextView.swift in Sources */,
 				D491A67125BF562F00A0779F /* AppColours.swift in Sources */,
 				D491A77725BF92BA00A0779F /* GalleryShowcase.swift in Sources */,
+				D47D356825C03E36009C9D26 /* ShowcaseDetailView.swift in Sources */,
 				D491A72C25BF6B9800A0779F /* APIResponse.swift in Sources */,
 				D491A77625BF92BA00A0779F /* CandidateGallery.swift in Sources */,
 				D491A71825BF6B5B00A0779F /* GiphyService.swift in Sources */,

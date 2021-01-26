@@ -13,7 +13,7 @@ struct CLSecondaryButton: View {
     var action: () -> Void
     
     var body: some View {
-        Button(action: action, label: {
+        Button(action: self.action, label: {
             
             HStack {
                 Text(buttonTitle)

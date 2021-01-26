@@ -73,11 +73,17 @@ struct VirtualCVView: View {
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 25) {
                         ForEach(0 ..< candidate.gallery.showcases.count) { index in
-                            GalleryItemView(
-                                galleryItemViewModel: GalleryItemViewModel(
-                                    
-                                    galleryItem: candidate.gallery.showcases[index],
-                                    UrlSessionService()))
+                            
+                            NavigationLink(destination: ShowcaseDetailView(showcaseDetailViewModel: ShowcaseDetailViewModel(showcase: candidate.gallery.showcases[index],
+                                UrlSessionService()))) {
+                                
+                                GalleryItemView(
+                                    galleryItemViewModel: GalleryItemViewModel(
+                                        
+                                        galleryItem: candidate.gallery.showcases[index],
+                                        UrlSessionService()))
+                            }
+                            
                         }
                     }
                     .padding(.bottom, 25)
